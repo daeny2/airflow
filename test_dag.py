@@ -58,4 +58,4 @@ with DAG(
                                      mode="reschedule")
     # [END howto_operator_external_task_sensor]
     child_task2 = DummyOperator(task_id="child_task2")
-    child_task1 >> 
+    child_task1 >> child_task2
